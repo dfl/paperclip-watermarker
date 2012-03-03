@@ -11,7 +11,7 @@ module PaperclipWatermarker
         for_command(:composite).
         with_configuration(:source_file_options => %{\\( "#{options[:watermark].path}" -resize 100% \\)}).
         with_flag(:dissolve, '20%').
-        with_flag(:gravity, 'center').
+        with_flag(:gravity, 'SouthEast').
         with_flag(:geometry, '+0+0')
     end
   end
